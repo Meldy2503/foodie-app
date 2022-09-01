@@ -20,7 +20,7 @@ const Data = [
   {
     id: 3,
     smallHeader: "Create Menu",
-    bigHeader: "create menu",
+    bigHeader: "Create Menu",
     text: "Various meal types can be offered on the platform - ranging from local delicacies to international cuisines. The meals can be packaged in the form of instant orders, which will be delivered to your client as soon as possible or as preorders, which are meal packages to be delivered at a predetermined date.",
     link: "",
     img: require("../../../assets/images/homePgImgs/menu.PNG"),
