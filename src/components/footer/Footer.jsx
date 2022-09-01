@@ -122,9 +122,9 @@ const Footer = () => {
             </Text>
           </Row4Left>
           <Row4Right>
-            <TextPolicy href="/terms">Legal</TextPolicy>
-            <TextPolicy href="/privacy-policy">Privacy Policy</TextPolicy>
-            <TextPolicy href="/">Cookies</TextPolicy>
+            <TextPolicy to="/terms">Legal</TextPolicy>
+            <TextPolicy to="/privacy-policy">Privacy Policy</TextPolicy>
+            <TextPolicy to="/">Cookies</TextPolicy>
           </Row4Right>
         </Row4>
       </Row4Wrapper>

@@ -275,7 +275,7 @@ export const Text = styled.p`
   line-height: 1.5;
   color: ${({ theme }) => theme.colors.white1};
 `;
-export const TextPolicy = styled.a`
+export const TextPolicy = styled(Link)`
   margin-left: 3rem;
   font-size: 1.4rem;
   line-height: 1.5;

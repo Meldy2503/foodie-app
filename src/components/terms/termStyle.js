@@ -21,6 +21,10 @@ export const HeroSection = styled.div`
   width: 100%;
   margin-top: 6.8rem;
   position: relative;
+
+  @media screen and (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
+    height: 18rem;
+  }
 `;
 export const MainHeader = styled.h1`
   width: 90%;
@@ -31,8 +35,9 @@ export const MainHeader = styled.h1`
   left: 50%;
   transform: translate(-50%, -50%);
 
-  @media screen and (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
-    top: 63%;
+  @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+    top: 32%;
+    text-align: center;
   }
 `;
 
