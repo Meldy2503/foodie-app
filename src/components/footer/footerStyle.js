@@ -129,7 +129,7 @@ export const Row2 = styled.div`
   margin-bottom: 8rem;
 
   @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
-    margin-bottom: 0 auto 4rem auto;
+    margin: 0 auto 3rem auto;
   }
 `;
 export const Column = styled.div`

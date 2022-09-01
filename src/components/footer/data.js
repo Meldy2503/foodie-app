@@ -31,6 +31,17 @@ const Data = [
 
   {
     id: 4,
+    header: "Support",
+    links: [
+      ["Forum", "/"],
+      ["24/7 Support", "/contact-us"],
+      ["Report Abuse", "/contact-us"],
+      ["API Documentation", "/"],
+    ],
+  },
+
+  {
+    id: 5,
     header: "More",
     links: [
       ["Features", "/"],
@@ -38,17 +49,6 @@ const Data = [
       ["Themes", "/"],
       ["Sitemap", "/"],
       ["Press and Media", "/"],
-    ],
-  },
-
-  {
-    id: 5,
-    header: "Support",
-    links: [
-      ["Forum", "/"],
-      ["API Documentation", "/"],
-      ["24/7 Support", "/contact-us"],
-      ["Report Abuse", "/contact-us"],
     ],
   },
 ];
