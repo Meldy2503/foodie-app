@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-import { BiChevronDown } from "react-icons/bi";
 
 export const Header = styled.header`
   width: 100%;
@@ -68,7 +67,7 @@ export const LinkContainer = styled.ul`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 85%;
+    width: 82%;
 
     @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
       display: none;
@@ -88,7 +87,7 @@ export const Wrapper = styled.div`
 `;
 
 export const LinkLists = styled.li`
-  padding-left: 3rem;
+  padding-left: 3.5rem;
 
   @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
     padding: 3rem 0 1.5rem 2.6rem;
@@ -109,11 +108,6 @@ export const Link = styled(NavLink)`
   }
 `;
 
-export const Link1 = styled(Link)`
-  @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
-    padding-left: 1.5rem;
-  }
-`;
 export const Medium = styled.a`
   color: ${({ theme }) => theme.colors.black2};
   font-weight: bold;
@@ -124,20 +118,6 @@ export const Medium = styled.a`
 
   @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
     font-size: 1.9rem;
-    padding-left: 1.5rem;
-  }
-`;
-
-export const ArrowDown = styled(BiChevronDown)`
-  margin-left: 0.4rem;
-`;
-
-export const MenuIcon = styled.div`
-  display: none;
-
-  @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
-    display: block;
-    font-weight: bolder;
   }
 `;
 
@@ -156,4 +136,13 @@ export const GetStarted = styled.div`
 export const Link2 = styled(NavLink)`
   color: ${({ theme }) => theme.colors.white1};
   font-size: 1.5rem;
+`;
+
+export const MenuIcon = styled.div`
+  display: none;
+
+  @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
+    display: block;
+    font-weight: bolder;
+  }
 `;

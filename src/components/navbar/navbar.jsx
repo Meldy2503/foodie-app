@@ -10,13 +10,11 @@ import {
   LinkContainer,
   LinkLists,
   Link,
-  Link1,
   Link2,
   Medium,
   MenuIcon,
   GetStarted,
   Wrapper,
-  ArrowDown,
 } from "./navbarStyle";
 
 const Navbar = ({ bgCo, position }) => {
@@ -38,16 +36,17 @@ const Navbar = ({ bgCo, position }) => {
           <LinkContainer isMenuOpen={isMenuOpen} bgCo={bgCo}>
             <Wrapper>
               <LinkLists>
-                <Link1 to="/create-account" onClick={closeMenuLink}>
-                  Start <ArrowDown />
-                </Link1>
+                <Link to="/create-account" onClick={closeMenuLink}>
+                  Start
+                </Link>
               </LinkLists>
               <LinkLists>
                 <Medium
                   href="https://medium.com/foodienig"
+                  target="_blank"
                   onClick={closeMenuLink}
                 >
-                  Learn <ArrowDown />
+                  Learn
                 </Medium>
               </LinkLists>
             </Wrapper>
