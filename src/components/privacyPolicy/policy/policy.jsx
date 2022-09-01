@@ -1,5 +1,4 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
 import { Titles, Data } from "./data";
 
 import {
@@ -18,10 +17,6 @@ import {
 } from "./policyStyle";
 
 const Policy = () => {
-  // const [active, setActive] = React.useState(false);
-
-  // const handleActive = () => setActive(true);
-  let location = useLocation();
   return (
     <PolicySection>
       <ContentContainer>
