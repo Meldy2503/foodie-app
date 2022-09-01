@@ -129,18 +129,14 @@ export const Row2 = styled.div`
   margin-bottom: 8rem;
 
   @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
-    margin-bottom: 4rem;
+    margin-bottom: 0 auto 4rem auto;
   }
 `;
 export const Column = styled.div`
   @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
+    margin-right: 4rem;
+    margin-left: 1rem;
     margin-bottom: 4rem;
-  }
-  @media screen and (max-width: ${({ theme }) => theme.mediaQuery.smobile}) {
-    margin-right: 1.1rem;
-    margin-left: 1.1rem;
   }
 `;
 export const Header = styled.h4`

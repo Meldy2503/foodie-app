@@ -57,7 +57,7 @@ const Footer = () => {
           <Row1Right>
             <Row1Heading>Sign up to the newsroom</Row1Heading>
             <Form>
-              <Input type="text" id="name" name="name" />
+              <Input type="email" id="email" name="email" />
               <SignupBtn type="submit" value="Sign Up" />
             </Form>
           </Row1Right>

@@ -12,17 +12,6 @@ const Data = [
 
   {
     id: 2,
-    header: "Support",
-    links: [
-      ["Forum", "/"],
-      ["API Documentation", "/"],
-      ["24/7 Support", "/contact-us"],
-      ["Report Abuse", "/contact-us"],
-    ],
-  },
-
-  {
-    id: 3,
     header: "Account",
     links: [
       ["Personal", "/create-account"],
@@ -31,7 +20,7 @@ const Data = [
     ],
   },
   {
-    id: 4,
+    id: 3,
     header: "Partners",
     links: [
       ["Affillates", "/affilliates"],
@@ -39,8 +28,9 @@ const Data = [
       ["Solutioning", "/"],
     ],
   },
+
   {
-    id: 5,
+    id: 4,
     header: "More",
     links: [
       ["Features", "/"],
@@ -48,6 +38,17 @@ const Data = [
       ["Themes", "/"],
       ["Sitemap", "/"],
       ["Press and Media", "/"],
+    ],
+  },
+
+  {
+    id: 5,
+    header: "Support",
+    links: [
+      ["Forum", "/"],
+      ["API Documentation", "/"],
+      ["24/7 Support", "/contact-us"],
+      ["Report Abuse", "/contact-us"],
     ],
   },
 ];

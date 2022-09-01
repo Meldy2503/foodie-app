@@ -29,8 +29,8 @@ export const MainHeading = styled.h1`
     width: 100%;
   }
 `;
-export const SubHeading = styled.h3`
-  margin: 2.5rem 0 4.5rem 0;
+export const SubHeading = styled.h2`
+  margin: 4.5rem 0;
 `;
 export const Row = styled.div`
   display: flex;
@@ -101,6 +101,7 @@ export const Btn = styled.a`
   border-radius: 0.5rem;
   width: fit-content;
   margin: 0 auto;
+  cursor: pointer;
 `;
 
 export const BackArrow = styled(HiOutlineArrowNarrowRight)`
