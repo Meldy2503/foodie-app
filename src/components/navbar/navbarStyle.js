@@ -62,8 +62,6 @@ export const LinkContainer = styled.ul`
     display: block;
     z-index: 5000;
     height: 100vh;
-    /* transform: translateX(50px);
-    transition: transform 1s ease-in-out; */
   }
 
   ${(props) => props.isMenuOpen} {
@@ -113,6 +111,19 @@ export const Link = styled(NavLink)`
 
 export const Link1 = styled(Link)`
   @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
+    padding-left: 1.5rem;
+  }
+`;
+export const Medium = styled.a`
+  color: ${({ theme }) => theme.colors.black2};
+  font-weight: bold;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
+    font-size: 1.9rem;
     padding-left: 1.5rem;
   }
 `;

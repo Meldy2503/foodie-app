@@ -12,6 +12,7 @@ import {
   Link,
   Link1,
   Link2,
+  Medium,
   MenuIcon,
   GetStarted,
   Wrapper,
@@ -37,14 +38,17 @@ const Navbar = ({ bgCo, position }) => {
           <LinkContainer isMenuOpen={isMenuOpen} bgCo={bgCo}>
             <Wrapper>
               <LinkLists>
-                <Link1 to="/" onClick={closeMenuLink}>
+                <Link1 to="/create-account" onClick={closeMenuLink}>
                   Start <ArrowDown />
                 </Link1>
               </LinkLists>
               <LinkLists>
-                <Link1 to="/" onClick={closeMenuLink}>
+                <Medium
+                  href="https://medium.com/foodienig"
+                  onClick={closeMenuLink}
+                >
                   Learn <ArrowDown />
-                </Link1>
+                </Medium>
               </LinkLists>
             </Wrapper>
             <Wrapper>
@@ -54,7 +58,7 @@ const Navbar = ({ bgCo, position }) => {
                 </Link>
               </LinkLists>
               <LinkLists>
-                <Link to="/" onClick={closeMenuLink}>
+                <Link to="/create-account" onClick={closeMenuLink}>
                   Login
                 </Link>
               </LinkLists>

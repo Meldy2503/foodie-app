@@ -7,7 +7,7 @@ export const PolicySection = styled.section`
 export const ContentContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 8rem 0;
+  padding: 3rem 0 8rem 0;
   width: 90%;
   max-width: 120rem;
   margin: 0 auto;
@@ -21,6 +21,7 @@ export const Col1 = styled.div`
   height: fit-content;
   border-left: 0.3rem solid #d0d0d0;
   padding-left: 1.7rem;
+  margin-top: 5rem;
 
   @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
     margin-bottom: 5rem;
@@ -69,18 +70,24 @@ export const Links = styled.a`
 `;
 
 export const Contents = styled.div`
-  margin-bottom: 7rem;
+  margin-bottom: 2rem;
 `;
 export const Title = styled.h3`
   font-family: "Expletus Sans", cursive;
   margin-bottom: 2rem;
+  padding-top: 5rem;
 `;
-export const Para1 = styled.p``;
+export const Para1 = styled.p`
+  line-height: 1.5;
+`;
 export const ListContainer = styled.ul`
   margin: 1rem 0 1rem 2rem;
 `;
 export const ListItems = styled.li`
   padding: 1rem 0;
   list-style-type: disc;
+  line-height: 1.5;
 `;
-export const Para2 = styled.p``;
+export const Para2 = styled.p`
+  line-height: 1.5;
+`;
