@@ -36,8 +36,8 @@ const Navbar = ({ bgCo, position }) => {
           <LinkContainer isMenuOpen={isMenuOpen} bgCo={bgCo}>
             <Wrapper>
               <LinkLists>
-                <Link to="/create-account" onClick={closeMenuLink}>
-                  Start
+                <Link to="/about-us" onClick={closeMenuLink}>
+                  About Us
                 </Link>
               </LinkLists>
               <LinkLists>
@@ -54,6 +54,11 @@ const Navbar = ({ bgCo, position }) => {
               <LinkLists>
                 <Link to="/pricing" onClick={closeMenuLink}>
                   Pricing
+                </Link>
+              </LinkLists>
+              <LinkLists>
+                <Link to="/contact-us" onClick={closeMenuLink}>
+                  Contact Us
                 </Link>
               </LinkLists>
               <LinkLists>
