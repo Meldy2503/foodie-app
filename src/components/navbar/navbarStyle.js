@@ -61,6 +61,7 @@ export const LinkContainer = styled.ul`
     display: block;
     z-index: 5000;
     height: 100vh;
+    transition: all 0.5s ease;
   }
 
   ${(props) => props.isMenuOpen} {

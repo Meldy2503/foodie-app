@@ -1,16 +1,12 @@
 import styled from "styled-components";
 
 export const SectionContainer = styled.section`
-  background: linear-gradient(152deg, #faeded 75%, #c62410 50%);
+  background-color: ${({ theme }) => theme.colors.red2};
   width: 100%;
   display: flex;
   overflow: hidden;
   position: relative;
   margin-top: 6.8rem;
-
-  @media screen and (max-width: 850px) {
-    background: ${({ theme }) => theme.colors.red2};
-  }
 `;
 
 export const ContentWrapper = styled.div`

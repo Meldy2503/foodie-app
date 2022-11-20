@@ -1,16 +1,19 @@
-import { Fragment } from "react";
+import { Fragment, lazy, Suspense } from "react";
 import { GlobalStyle } from "./GlobalStyle";
 import { ThemeProvider } from "styled-components";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Contact from "./pages/Contact";
-import Pricing from "./pages/Pricing";
-import Affilliates from "./pages/Affilliates";
-import TermsAndConditions from "./pages/Terms";
-import CreateAccount from "./pages/createAccount";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
-import AboutUs from "./pages/AboutUs";
+import { Routes, Route } from "react-router-dom";
+import ErrorBoundary from "./pages/ErrorBoundary";
+import Loading from "./components/Loading";
 import ScrollToTop from "./pages/scrollToTop";
+
+let Home = lazy(() => import("./pages/Home"));
+let Contact = lazy(() => import("./pages/Contact"));
+let Pricing = lazy(() => import("./pages/Pricing"));
+let Affilliates = lazy(() => import("./pages/Affilliates"));
+let TermsAndConditions = lazy(() => import("./pages/Terms"));
+let CreateAccount = lazy(() => import("./pages/createAccount"));
+let PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
+let AboutUs = lazy(() => import("./pages/AboutUs"));
 
 const theme = {
   colors: {
@@ -39,25 +42,27 @@ const theme = {
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop>
-        <ThemeProvider theme={theme}>
-          <Fragment>
-            <GlobalStyle />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about-us" element={<AboutUs />} />
-              <Route path="/contact-us" element={<Contact />} />
-              <Route path="/pricing" element={<Pricing />} />
-              <Route path="/affilliates" element={<Affilliates />} />
-              <Route path="/terms" element={<TermsAndConditions />} />
-              <Route path="/create-account" element={<CreateAccount />} />
-              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            </Routes>
-          </Fragment>
-        </ThemeProvider>
-      </ScrollToTop>
-    </Router>
+    <ErrorBoundary>
+      <Suspense fallback={<Loading />}>
+        <ScrollToTop>
+          <ThemeProvider theme={theme}>
+            <Fragment>
+              <GlobalStyle />
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about-us" element={<AboutUs />} />
+                <Route path="/contact-us" element={<Contact />} />
+                <Route path="/pricing" element={<Pricing />} />
+                <Route path="/affilliates" element={<Affilliates />} />
+                <Route path="/terms" element={<TermsAndConditions />} />
+                <Route path="/create-account" element={<CreateAccount />} />
+                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              </Routes>
+            </Fragment>
+          </ThemeProvider>
+        </ScrollToTop>
+      </Suspense>
+    </ErrorBoundary>
   );
 }
 
