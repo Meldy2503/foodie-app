@@ -29,7 +29,7 @@ const Navbar = ({ bgCo, position }) => {
         <NavContainer>
           <Logo>
             <Link to="/">
-              <img src={LogoImg} alt="foodie logo" />
+              <img src={LogoImg} alt="foodie app logo" />
               <h2>foodie</h2>
             </Link>
           </Logo>
